@@ -15,4 +15,5 @@ void reverseText(MouseEvent event) {
   }
   print('that');
   querySelector('#sample_text_id').text = buffer.toString();
+  print('that');
 }
