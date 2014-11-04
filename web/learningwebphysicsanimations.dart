@@ -1,19 +1,6 @@
-import 'dart:html';
+import 'bouncingBall/bouncing_ball.dart';
 
-void main() {
-  querySelector('#sample_text_id')
-    ..text = 'Click me!'
-    ..onClick.listen(reverseText);
+main(){
+  mainCall();
 }
 
-
-void reverseText(MouseEvent event) {
-  var text = querySelector('#sample_text_id').text;
-  var buffer = new StringBuffer();
-  for (int i = text.length - 1; i >= 0; i--) {
-    buffer.write(text[i]);
-  }
-  print('that');
-  querySelector('#sample_text_id').text = buffer.toString();
-  print('that');
-}
